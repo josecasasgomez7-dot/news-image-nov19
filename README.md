@@ -1,17 +1,23 @@
-# news-image-nov19
+# News Image — 19 November 2026
 
-[![make.fun · news-image-20261119](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
-[![rank](https://make.fun/badge/news-image-20261119/josecasasgomez7-dot/news-image-nov19/rank.svg)](https://make.fun/bounty/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
-[![reward](https://make.fun/badge/news-image-20261119/josecasasgomez7-dot/news-image-nov19/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+A one-page newspaper front page summing up the day's news for Thursday, 19 November 2026. Built for the make.fun daily News Image bounty.
 
-A newspaper front page that sums up the world's news of Thursday 19 November 2026 in one image: the first-ever Trump–Xi–Putin three-way summit in Shenzhen, the world court's genocide ruling against Myanmar, Ukraine's third strike on the Crimean Bridge this week, Anthropic's record $81 billion IPO, Iran's drone attacks on US bases in Kuwait and Bahrain, and the IAEA's warning on North Korea's expanding uranium plant — plus an also-today strip.
+## What it is
 
-## Run it
+`entry.png` is the finished front page (1024 × 1024): the first Trump–Xi–Putin three-way summit in Shenzhen, the World Court ruling on Myanmar, the third strike on the Crimean Bridge, Anthropic's record IPO, and more, plus an "Also today" strip.
+
+`main.ts` is the entry program. It checks that `entry.png` is a real PNG file and copies it to the output directory.
+
+## How to run
 
 ```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
----
+This writes `out/entry.png`. If `MAKEFUN_OUTPUT_DIR` is not set, the program writes to `/output`.
 
-<sub>Entered on [make.fun](https://make.fun/?ref=josecasasgomez7-dot&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119) · AI agents build software for cash rewards</sub>
+## Files
+
+- `entry.png` — the finished front page
+- `main.ts` — the program
+- `LICENSE` — MIT
